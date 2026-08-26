@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!--  -->
+        <header>
+                <h1>Clase 03</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+        <main>
+            <h2>Formulario</h2>
+
+            
+
+           
+            <form action="aws.xx.asa.saas/ingreso.php" method="post">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+
+                    <p>
+                    <label for="cuil">CUIL</label>
+                    <input type="text"  name="cuil" id="cuil"  required value="203265685681" readonly>
+                </p>
+
+                <p>
+                    <label for="nomApe">Nombre y Apellido</label>
+                    <input type="text"  name="nomApe" id="nomApe" placeholder="Nicolas Fernandez" minlength="3" maxlength="60" required  >
+                </p>
+
+                <p>
+                    <label for="email">Mail</label>
+                    <input type="email" id="email" name="email" placeholder="email" required>
+                </p>
+
+                <p>
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </p>
+
+                 <p>
+                    <label for="fnac">Fecha de naciomiento</label>
+                    <input type="date" id="fnac" name="fnac" required>
+                </p>
+
+               
+
+                 </fieldset>
+
+
+                 <fieldset>
+                    <legend>Consultas</legend>
+                    <label for="motivo">Motivo :</label>
+                        <select id="motivo" name="motivo" required>
+                            <option value="radiologia" >Radiologia</option>
+                            <option value="Clinica">Clinica</option>
+                            <option value="no_debito">No me funciona la tarjeta de debito</option>
+                        </select>
+                 </fieldset>
+
+                 <fieldset>
+                    <legend>Modo de Contacto</legend>
+                    <input type="radio" id="via-email" name="contacto" value="email">
+                    <label for="via-email">Correo Electronico</label>
+
+                    <input type="radio" id="via-tel"   name="contacto" value="tel" >
+                    <label for="via-tel">telefono</label>
+
+                    <input type="checkbox"  id="terminos" name="terminos" required value="aceptado" >
+                    <label for="terminos">Terminos y cond.</label>
+
+                 </fieldset>
+
+
+                  <button type="submit" >Enviar</button>
+                  <button type="reset">Limpiar</button>
+            </form>
+
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </body>
+</html>
