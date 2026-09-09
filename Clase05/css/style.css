@@ -1,0 +1,65 @@
+body{
+    background-color: grey;
+    color: darkslategray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+h1{
+    color:black;
+}
+
+h2{
+    font-size: 22px;
+}
+
+.destacado{
+    background-color: red;
+}
+
+
+
+.subrayado{
+    text-decoration: underline;
+}
+
+.negrita{
+    font-weight: 700;
+}
+
+.cursiva{
+    font-style: italic;
+}
+
+.grande{
+    font-size: 32px;
+}
+.centrado{
+    text-align: center;
+}
+
+
+.menu{
+    list-style: none;
+}
+
+
+.menu li {
+    color:white;
+    background-color: black;
+    cursor: pointer;
+}
+
+div p span{
+    color: blue;
+}
+
+.caja p{
+    color: blue;
+}
+
+
+
+
+
+
+

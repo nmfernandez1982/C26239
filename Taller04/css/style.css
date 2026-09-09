@@ -1,0 +1,30 @@
+/*
+Etiqueta
+Clase
+id
+Universal
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;   
+    /* font-size: ; */
+    /* font-weight: ; */   
+    
+}
+
+header{
+    background-color: red;
+}
+
+div{
+    background-color: lightcyan;
+    width: 100px;  
+    height: 100px;  
+    border: 1px solid red;
+}
