@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+
+            body {
+                font-family: Arial, sans-serif;
+                background: #F4F6F5;
+                padding: 30px 20px;
+                line-height: 1.5;
+            }
+
+            h1 { color: #1F6F66; margin-bottom: 20px; }
+            h2 { color: #1F6F66; font-size: 20px; margin: 30px 0 8px; }
+            p  { margin-bottom: 8px; }
+
+             pre {
+                background: #23272E;
+                color: #E6E6E6;
+                padding: 10px 14px;
+                border-radius: 6px;
+                font-size: 14px;
+                margin: 8px 0;
+            }
+            .caja {
+                width: 90px;
+                height: 90px;
+                border-radius: 8px;
+                color: white;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+                .c1 { background: #2F8F83; }
+                .c2 { background: #44618C; }
+                .c3 { background: #C94F4F; }
+                .c4 { background: #8A6BBE; }
+            .fila{
+                display: flex;
+                gap: 10px;
+            }
+
+             .centrado {
+                display: flex;
+                gap: 10px;
+                /* justify-content: center; */
+                /* justify-content: space-around; */
+                justify-content: space-between;
+                background: #E3EFEC;
+                padding: 10px;
+            }
+
+            .wrap {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                max-width: 320px;
+                background: #E3EFEC;
+                padding: 10px;
+            }
+
+            /*ejemplo 4*/
+            .mapa {
+                flex: 1 1 420px;         
+                background: #44618C;
+                color: white;
+                padding: 20px;
+                border-radius: 8px;
+            }
+            .datos{
+                
+                /* flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 320px;  */
+
+                flex: 1 1 320px;
+                background: #2F8F83;
+                color: white;
+                padding: 20px;
+                border-radius: 8px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="fila">
+            <div class="caja c1">1</div>
+            <div class="caja c2">2</div>
+            <div class="caja c3">3</div>
+        </div>
+        <pre>Gap de 10px</pre>
+
+        <h2>2. justify-content</h2>
+            <div class="centrado">
+            <div class="caja c1">1</div>
+            <div class="caja c2">2</div>
+            <div class="caja c3">3</div>
+            </div>
+        <pre>justify-content: space-between;</pre>
+
+
+        <h2>3. wrapt</h2>
+        <div class="wrap">
+            <div class="caja c1">1</div>
+            <div class="caja c2">2</div>
+            <div class="caja c3">3</div>
+            <div class="caja c4">4</div>
+        </div>
+        <pre>flex-wrap: wrap;</pre>
+
+        <div class="columnas">
+        <div class="datos">flex: 1 1 320px</div>
+        <div class="mapa">flex: 1 1 420px</div>
+        </div>
+
+
+
+    </body>
+</html>
