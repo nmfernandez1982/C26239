@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+
+
+        <style>
+              * { margin: 0; padding: 0; box-sizing: border-box; }
+
+                body {
+                    font-family: Arial, sans-serif;
+                    background: #F4F6F5;
+                    padding: 30px 20px;
+                    line-height: 1.5;
+                }
+
+                  h1 { color: #1F6F66; margin-bottom: 20px; }
+                  h2 { color: #1F6F66; font-size: 20px; margin: 30px 0 8px; }
+
+                pre {
+                    background: #23272E;
+                    color: #E6E6E6;
+                    padding: 10px 14px;
+                    border-radius: 6px;
+                    font-size: 14px;
+                    margin: 8px 0;
+                }
+
+                 .caja {
+                        height: 80px;
+                        border-radius: 8px;
+                        color: white;
+                        font-weight: bold;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .c1 { background: #2F8F83; }
+                    .c2 { background: #44618C; }
+                    .c3 { background: #C94F4F; }
+                    .c4 { background: #8A6BBE; }
+
+                    .grid{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        gap: 10px;
+                    }
+
+                     .grid2{
+                        display: grid;
+                        grid-template-columns: 2fr  1fr;
+                        gap: 10px;
+                    }    
+                     .grid3{
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                        gap: 10px;
+                    }                       
+                    
+
+
+        </style>
+    </head>
+    <body>
+        <h2>Columnas iguales</h2>
+        <div class="grid">
+            <div class="caja c1"></div>
+            <div class="caja c2">2</div>
+            <div class="caja c3">3</div>
+            <div class="caja c4">4</div>
+        </div>
+
+        <h2>Columnas Distintas</h2>
+        <div class="grid2">
+            <div class="caja c1">1</div>
+            <div class="caja c2">2</div>
+            <div class="caja c3">3</div>
+            <div class="caja c4">4</div>
+        </div>
+
+           <h2>Columnas repartidas</h2>
+        <div class="grid3">
+            <div class="caja c1">1</div>
+            <div class="caja c2">2</div>
+            <div class="caja c3">3</div>
+            <div class="caja c4">4</div>
+        </div>
+    
+    </body>
+</html>
